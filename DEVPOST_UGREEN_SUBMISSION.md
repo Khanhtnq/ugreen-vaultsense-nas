@@ -4,7 +4,7 @@
 **Round**: Round 1 (Local Pre-test & Technical Proposal)  
 **Project Title**: VaultSense UGOS — Zero-Cloud Semantic Deduplicator, Entropy Ransomware Canary & Invoice Tax Vault Skill  
 **Author**: Khanhtnq (`218711032+Khanhtnq@users.noreply.github.com`)  
-**Repository**: `e:\BOUTY ARGON\workspaces\ugreen_nas_skill_46k`  
+**Repository**: `https://github.com/Khanhtnq/ugreen-vaultsense-skill`  
 
 ---
 
