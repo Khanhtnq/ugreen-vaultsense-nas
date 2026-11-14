@@ -1,0 +1,22 @@
+services:
+  vaultsense:
+    build: .
+    image: ugreen/vaultsense:1.0.0
+    container_name: ugreen-vaultsense-skill
+    restart: unless-stopped
+    ports:
+      - "8443:8443"
+    environment:
+      - UGOS_VOLUME_MOUNT=/storage/data
+      - UGOS_CANARY_DIR=/storage/data/.canary_traps
+      - ENTROPY_THRESHOLD=7.85
+      - DEDUP_CHUNK_SIZE_KB=64
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./data:/storage/data
+      - ./logs:/var/log/vaultsense
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2048M

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "skill_id": "com.ugreen.skill.vaultsense",
+  "name": "VaultSense UGOS",
+  "version": "1.0.0",
+  "display_name": "VaultSense — Zero-Cloud Deduplicator & Canary Guard",
+  "description": "Enterprise-grade local storage intelligence for UGREEN AI NAS: Zero-Cloud Semantic Deduplication, Real-Time Shannon Entropy Ransomware Canary, and Automated Invoice/Tax Vault.",
+  "category": "Storage & Security",
+  "author": {
+    "name": "Khanhtnq",
+    "email": "218711032+Khanhtnq@users.noreply.github.com",
+    "organization": "VaultSense Security Labs"
+  },
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "entrypoint": "vaultsense.api:app",
+  "execution_runtime": {
+    "type": "docker",
+    "compose_file": "docker-compose.yml",
+    "python_version": "3.11",
+    "recommended_hardware": {
+      "min_ram_mb": 1024,
+      "recommended_ram_mb": 4096,
+      "npu_accelerator": "supported",
+      "storage_min_gb": 10
+    }
+  },
+  "capabilities": [
+    "storage.filesystem.read",
+    "storage.filesystem.write",
+    "ai.npu.local_inference",
+    "security.audit_events",
+    "notifications.push"
+  ],
+  "authorized_scopes": [
+    "ugos.nas.files.read",
+    "ugos.nas.files.dedup",
+    "ugos.nas.security.canary",
+    "ugos.nas.knowledge.invoice"
+  ],
+  "endpoints": {
+    "dashboard_ui": "/ui",
+    "health_check": "/api/v1/status",
+    "webhook_file_event": "/api/v1/scan"
+  },
+  "tags": [
+    "ai-nas",
+    "ugos",
+    "deduplication",
+    "ransomware-canary",
+    "invoice-vault",
+    "zero-cloud",
+    "privacy-first"
+  ]
+}
