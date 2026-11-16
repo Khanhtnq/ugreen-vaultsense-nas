@@ -15,7 +15,7 @@ VaultSense is an enterprise-grade, edge AI skill architected natively for the **
 ## 🛠️ Repository Structure
 
 ```
-ugreen_nas_skill_46k/
+ugreen-vaultsense-nas/
 ├── manifest.json                  # Official UGREEN Skill Hub Manifest
 ├── SKILL.md                       # Skill specification with frontmatter metadata
 ├── docker-compose.yml             # UGOS Container orchestration

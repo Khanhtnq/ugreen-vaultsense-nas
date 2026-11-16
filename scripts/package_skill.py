@@ -30,10 +30,10 @@ def package_skill():
             if os.path.exists(dp):
                 for root, _, files in os.walk(dp):
                     for file in files:
-                        if "__pycache__" in root or file.endswith(".pyc"):
+                        if "__pycache__" in root or file.endswith((".pyc", ".mp4", ".png")):
                             continue
                         full_path = os.path.join(root, file)
-                        arc_name = os.path.relpath(full_path, root_dir)
+                        arc_name = os.path.relpath(full_path, root_dir).replace("\\", "/")
                         zipf.write(full_path, arcname=arc_name)
 
     print(f"Skill successfully packaged: {zip_path} ({os.path.getsize(zip_path)} bytes)")
