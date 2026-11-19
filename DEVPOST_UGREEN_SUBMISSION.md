@@ -1,65 +1,47 @@
-# VaultSense UGOS — Devpost Submission Details
+# VaultSense UGOS (`vaultsense-ugos`) — Devpost Round 1 Submission Details (v2 Official-Rules Compliant)
 
 ## Devpost Form Metadata
 - **Hackathon**: UGREEN Hackathon 2026 on AI NAS (`https://ugreenhackathon.devpost.com/`, $46,000 USD Prize Pool)
 - **Project Name**: `VaultSense UGOS`
-- **Elevator Pitch (166 chars)**: `Zero-cloud UGREEN AI NAS skill combining MinHash semantic deduplication, Shannon entropy ransomware canary protection, and automated local VAT/tax invoice extraction.`
-- **Track / Prize Category**: `Workflow (Automate Your Workflow)` & `Innovation` (Round 1 Pre-test & Proposal; Eligible for Gold/Silver/Bronze & Most Creative Skills Awards)
-- **Built With**: `python`, `fastapi`, `docker`, `ugos`, `minhash`, `sha-256`, `edge-ai`, `html5`, `javascript`, `pytest`
-- **GitHub Repository URL**: `https://github.com/Khanhtnq/ugreen-vaultsense-nas`
-- **Try It Out Links**:
-  - `https://khanhtnq.github.io/ugreen-vaultsense-nas/`
-  - `https://github.com/Khanhtnq/ugreen-vaultsense-nas`
-- **File Attachments**:
-  - `dist/ugreen_vaultsense_skill.zip` (UGREEN Pre-test Skill Developer Package v2)
-  - `dist/UGREEN_VaultSense_Proposal.pdf` (Technical Architecture & iDX6011 Pro Round 2 Proposal)
-- **YouTube Title**: `VaultSense UGOS — Zero-Cloud AI NAS Deduplicator, Ransomware Canary & Tax Vault (1080p Demo)`
-- **YouTube Description**:
-  ```text
-  VaultSense UGOS — Official Demo for the UGREEN Hackathon 2026 on AI NAS ($46,000 Prize Pool).
-  100% On-Premises Storage Intelligence Skill for UGREEN UGOS Pro / iDX6011 Pro:
-  1. Zero-Cloud Semantic Deduplicator (Content-Defined Chunking + SHA-256 + MinHash Jaccard similarity)
-  2. Shannon Entropy Ransomware Canary (Real-time H > 7.85 bits/byte detection + honeypot bait traps)
-  3. Automated Local Invoice & VAT Tax Vault (Zero-egress receipt & tax categorization)
-
-  Live Interactive Demo: https://khanhtnq.github.io/ugreen-vaultsense-nas/
-  Open-Source Repository: https://github.com/Khanhtnq/ugreen-vaultsense-nas
-  ```
+- **Skill Name / Slug**: `vaultsense-ugos`
+- **Elevator Pitch (178 chars)**: `Uliya AI NAS orchestration Skill unifying duplicate discovery, on-demand SHA-256 canary baseline auditing, and local invoice-to-contract tax reconciliation on UGREEN UGOS.`
+- **Track / Prize Category**: `Automate Your Workflow` (Eligible for Gold/Silver/Bronze & Most Creative Skills Awards)
+- **Built With**: `ugos`, `uliya`, `markdown`, `ai-agents`, `ocr`, `vlm`, `sha-256`, `nodejs`, `python`
+- **File Attachments (Round 1 Required Deliverables)**:
+  - **Field 1 (`Pre-test Skill Package (ZIP)`)**: `dist/ugreen_vaultsense_skill_v2.zip` (`vaultsense-ugos/SKILL.md` + 4 linked `references/*.md` files — passes official `check-skill.mjs` v2.0.0 / Catalog `2.2.0` with `status: "static-pass"`, `0` errors, `0` warnings)
+  - **Field 4 (`Upload your PDF`)**: `dist/UGREEN_VaultSense_Proposal_v2.pdf` (Answers all 10 Official Rules questions in **398 substantive English words** `<= 500` limit + Page 2 Entrant Consent Declaration, Electronic Signature `/s/ Khanhtnq`, Third-Party Licenses, Data Flow & AI Tool Disclosures)
 
 ---
 
-## About the Project (Markdown Story)
+## About the Project (Devpost Markdown Story — 100% Aligned with Uliya Skill Package)
 
 ### Inspiration
-Modern NAS owners invest in network-attached storage because they demand **100% data sovereignty and zero cloud surveillance**. Yet as personal and SMB NAS volumes scale into tens of terabytes, users face three compounding operational headaches:
-1. **Silent Storage Bloat**: Redundant burst photo backups, near-duplicate video renders, and multi-version office documents quietly consume expensive NVMe and HDD RAID arrays.
-2. **Ransomware Encryption Attacks**: Threat actors increasingly target mounted SMB/NFS network shares, silently encrypting family archives and business records before standard antivirus tools react.
-3. **Tax-Season Chaos**: Freelancers and small businesses waste days hunting down scattered PDF receipts and VAT invoices across shared folders, yet refuse to upload confidential financial statements to third-party cloud SaaS platforms.
+NAS owners choose on-premises storage for **privacy and data control**, yet day-to-day folder growth introduces three recurring workflow bottlenecks for freelancers, creative studios, and small businesses:
+1. **Silent Duplicate Bloat**: Re-downloaded attachments, copied project deliverables, and re-scanned invoices quietly waste NAS capacity.
+2. **Undetected Shared-Folder Tampering**: Accidental overwrites or unauthorized edits in sensitive folders often go unnoticed until an archive is needed.
+3. **Tax-Season Reconciliation Friction**: Matching PDF/scanned vendor invoices against signed contracts takes hours of manual work, while uploading private financial records to external cloud bookkeeping bots defeats the purpose of owning a NAS.
 
-**VaultSense UGOS** solves all three problems directly on the **UGREEN AI NAS** local CPU/NPU with **zero external cloud egress**.
+**VaultSense UGOS (`vaultsense-ugos`)** solves all three workflows natively through the **Uliya Skill Development Standard** on **UGREEN AI NAS (UGOS)**—with zero external cloud transfers and zero automatic file deletion.
 
 ### What It Does
-- **Zero-Cloud Semantic Deduplicator**: Combines deterministic SHA-256 cryptographic hashing with 64-permutation MinHash Jaccard token similarity to pinpoint both byte-identical duplicates and near-identical document revisions across UGOS volumes.
-- **Shannon Entropy Ransomware Canary**: Continuously computes mathematical byte entropy ($H = -\sum p_i \log_2 p_i$) across watched SMB/NFS shares and deploys hidden `.canary_traps` bait files. When non-compressed files surge past `7.85 bits/byte` or a canary trap is touched, VaultSense immediately raises a critical incident alert to isolate the rogue client.
-- **Automated Invoice & Tax Vault**: Locally parses unstructured receipts and invoices to extract invoice IDs, dates, VAT registration numbers, currency totals, and tax-deductible expense categories without a single byte leaving the LAN.
+VaultSense UGOS is an invocation-scoped Uliya orchestration Skill (`kimage-planb` full `main-agent` profile) that coordinates three registered UGOS experts (`file-agent`, `document-agent`, and `knowledge-agent`) across five published CLI capabilities:
+- **Exact & Business-Signal Deduplication**: Uses `ug-filemgr` (`scan-dedupe`) via `file-agent` to group byte-identical files by cryptographic hash and `ug-document` (`extract` with `dedupe=true`) via `document-agent` to flag duplicate invoices sharing identical billing signals.
+- **On-Demand SHA-256 & Metadata Canary Baseline Audit**: Uses `ug-filesystem` (`find`, `ls`, `stat`, `get-dir-size`, `sha256sum`) via `file-agent` to verify file digests, sizes, and modification timestamps against user-supplied baselines or designated canary reference files.
+- **Structured Invoice-to-Contract Tax Reconciliation**: Uses `ug-document` (`metadata`, `extract`, `reconcile`, `qa`) via `document-agent` to extract vendor names, tax IDs, dates, and totals and deterministically reconcile multi-contract sums against invoice amounts.
+- **Approval-Gated Markdown Audit Ledger & Organization**: Saves verified audit and tax reconciliation reports via `ug-knowledge` (`save-text`, `workflow` approval) and optionally applies review tags (`ug-filemgr` `tag-add` / `tag-add-file`, `gateway` approval) or organizes confirmed files (`file-workflow` `start`, `run`, `batch-transfer`, `workflow` approval).
 
 ### How We Built It
-- **UGOS Skill Architecture**: Packaged strictly to the UGREEN Skill Developer Package v2 specification (`manifest.json`, `SKILL.md` frontmatter, `Dockerfile`, and `docker-compose.yml` container orchestration).
-- **FastAPI Microservice (`vaultsense/`)**: Modular Python 3.11 engine exposing clean REST endpoints (`/health`, `/scan/dedup`, `/scan/canary`, `/scan/invoices`) for seamless UGOS Control Center integration.
-- **Zero-Dependency Web Console (`docs/index.html`)**: Responsive dark-mode interactive dashboard enabling real-time deduplication previews, live entropy gauges, and one-click CSV/JSON tax exports.
-- **Automated Verification (`tests/`)**: Comprehensive `pytest` test suite (`10/10` passing unit and API integration tests).
+- **Strict Uliya Skill Standard Architecture**: Engineered around a clean `SKILL.md` entry point and four progressive-disclosure reference guides (`references/readme-guide.md`, `references/capability-mapping.md`, `references/validation-plan.md`, and `references/disclosures.md`), containing zero prohibited scripts, manifests, resident daemons, or binaries.
+- **Deterministic Upstream-to-Downstream Handoffs**: Every downstream `delegate` consumes only verified `completed` business facts while explicitly handling `failed`, `cancelled`, `waiting_user`, `waiting_approval`, empty-match (`no results` / `zero matches`), and partial-completion boundaries.
+- **Verified with Official UGOS Skill Creation Tool (`uliya-skill-kit` `0.7.7-en`)**: Validated directly against `scripts/check-skill.mjs` (Catalog `2.2.0`) achieving `status: "static-pass"` with `0` errors and `0` warnings.
 
 ### Challenges We Ran Into
-- **Distinguishing Legitimate Compressed Archives from Ciphertext**: Standard `.zip`, `.mp4`, and `.jpg` files naturally exhibit high byte entropy (`> 7.9 bits/byte`). We engineered magic-byte header inspection alongside file-extension whitelisting and dedicated honeypot canary files to eliminate false positives while maintaining sub-millisecond detection on encrypted office documents.
-- **Low-Memory Footprint for Multi-Terabyte Pools**: Streaming 64KB chunk windows and compact MinHash signatures keeps container RAM usage well below `256 MB`, ensuring smooth coexistence with UGOS media transcoding services.
+- **Respecting Invocation-Scoped Safety Boundaries**: Because Uliya Skills prohibit resident background daemons, custom scripts, and direct host file access, we redesigned integrity monitoring into an on-demand cryptographic baseline protocol combining `ug-filesystem` `sha256sum` and `stat` with saved Markdown baseline ledgers.
+- **Separating Save Verification from Index Readiness**: In Uliya's knowledge contract, `save-text` completion confirms file persistence (`verified`) rather than search-index readiness (`index-ready`); our workflow passes verified file paths directly rather than assuming immediate index availability.
 
 ### Accomplishments That We're Proud Of
-- Delivering a unified **3-in-1 privacy-first storage workflow skill** with **0 external API keys** and **0 cloud dependencies**.
-- Achieving `100%` pass rate across all unit and REST API verification suites alongside a ready-to-deploy UGOS Docker skill bundle and multi-page hardware roadmap PDF.
+- Achieving a clean **`static-pass` (`0` errors, `0` warnings)** on the official Uliya `check-skill.mjs` validator across all 5 Markdown package files.
+- Combining storage hygiene, cryptographic integrity verification, and deterministic contract-vs-invoice tax reconciliation in one cohesive, human-in-the-loop NAS workflow with **0 external runtime dependencies**.
 
-### What We Learned
-- Designing containerized edge AI workflows specifically tailored for NAS I/O characteristics, least-privilege volume mounts, and deterministic local inference.
-
-### What's Next for VaultSense UGOS (Round 2 Hardware Plan on UGREEN iDX6011 Pro)
-- **Intel Core Ultra NPU Acceleration**: Offload local multimodal embeddings (CLIP / ONNX Runtime OpenVINO EP) onto the iDX6011 Pro NPU for perceptual photo/video frame deduplication.
-- **UGOS Snapshot Rollback Hook**: Trigger instant Btrfs/ZFS read-only volume snapshots the millisecond a Shannon entropy canary alert fires.
+### What's Next for VaultSense UGOS (Round 2 Validation on UGREEN AI NAS iDX6011 Pro)
+- Execute end-to-end live benchmarking on the assigned **UGREEN AI NAS iDX6011 Pro (64GB)** across mixed duplicate/invoice/contract datasets, `ctx.ask` gateway/workflow approval resume cycles, and low-resolution scanned receipt edge cases.
