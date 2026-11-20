@@ -3,12 +3,35 @@
 [![UGOS Skill](https://img.shields.io/badge/UGOS-Skill%20v1.0.0-10b981.svg)](https://ugreenhackathon.devpost.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/tests-10%20passed-brightgreen.svg)](tests/)
+[![Live Demo](https://img.shields.io/badge/Demo-GitHub_Pages-cyan.svg)](https://khanhtnq.github.io/ugreen-vaultsense-nas/)
+
+- **Live Interactive Web Dashboard**: [https://khanhtnq.github.io/ugreen-vaultsense-nas/](https://khanhtnq.github.io/ugreen-vaultsense-nas/)
+- **YouTube Demo Video (1080p)**: [https://youtu.be/_eK_TeSgVlc](https://youtu.be/_eK_TeSgVlc) ([Watch on YouTube](https://www.youtube.com/watch?v=_eK_TeSgVlc))
+- **Official Devpost Submission Guide**: [`DEVPOST_UGREEN_SUBMISSION.md`](DEVPOST_UGREEN_SUBMISSION.md)
 
 VaultSense is an enterprise-grade, edge AI skill architected natively for the **UGREEN AI NAS (UGOS)** ecosystem. It delivers three zero-cloud storage capabilities without any external cloud egress:
 
 1. **Zero-Cloud Semantic Deduplicator**: Content-Defined Chunking (CDC) + SHA-256 exact match + MinHash Jaccard token similarity for duplicate burst photos, videos, and multi-version documents across SMB/NFS shares.
 2. **Shannon Entropy Ransomware Canary**: Real-time entropy monitor ($H = -\sum p \log_2 p$) that watches file changes and honeypot canary bait files, sounding an alert and halting processes if byte entropy exceeds 7.85 bits/byte on standard documents.
 3. **Automated Invoice & Tax Vault**: Local OCR & regex NER parser that extracts VAT numbers, currency totals, invoice IDs, and tags expenses into tax-ready categories.
+
+---
+
+## `< 60s` Judge Verification & Benchmark Summary
+
+1. **Zero-Install Interactive Dashboard**: Open **[https://khanhtnq.github.io/ugreen-vaultsense-nas/](https://khanhtnq.github.io/ugreen-vaultsense-nas/)** to test semantic deduplication, live Shannon entropy canary alarms, and local invoice extraction.
+2. **Local Verification (`~2s`)**:
+```bash
+git clone https://github.com/Khanhtnq/ugreen-vaultsense-nas.git && cd ugreen-vaultsense-nas
+pip install -r requirements.txt
+pytest -v tests/
+```
+
+| Deliverable / Check | Observed Result | Notes |
+|:---|:---|:---|
+| **Pytest Automated Suite** | **`10 / 10 PASSED`** | `test_api.py`, `test_canary.py`, `test_dedup.py`, `test_invoice_vault.py` |
+| **Uliya Skill Validator (`check-skill.mjs`)** | **`static-pass` (`0` errors, `0` warnings)** | Verified `dist/ugreen_vaultsense_skill_v2.zip` (`SKILL.md` + 4 `references/*.md`) |
+| **Round 1 Proposal PDF** | **`398` words (`<= 500` limit)** | `dist/UGREEN_VaultSense_Proposal_v2.pdf` + signed consent declaration |
 
 ---
 
